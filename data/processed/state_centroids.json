@@ -1,0 +1,82 @@
+[
+    {
+        "state": "SELANGOR",
+        "longitude": 101.368335,
+        "latitude": 3.341204
+    },
+    {
+        "state": "PAHANG",
+        "longitude": 102.633494,
+        "latitude": 3.883038
+    },
+    {
+        "state": "PULAU PINANG",
+        "longitude": 100.32092,
+        "latitude": 5.379217
+    },
+    {
+        "state": "SARAWAK",
+        "longitude": 113.089823,
+        "latitude": 2.631467
+    },
+    {
+        "state": "KEDAH",
+        "longitude": 100.246698,
+        "latitude": 6.052368
+    },
+    {
+        "state": "PERAK",
+        "longitude": 101.1292,
+        "latitude": 4.718914
+    },
+    {
+        "state": "SABAH",
+        "longitude": 117.471044,
+        "latitude": 5.577634
+    },
+    {
+        "state": "KELANTAN",
+        "longitude": 101.97095,
+        "latitude": 5.240806
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "longitude": 102.132546,
+        "latitude": 2.745134
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "longitude": 101.69936,
+        "latitude": 3.142881
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "longitude": 115.215184,
+        "latitude": 5.277212
+    },
+    {
+        "state": "PERLIS",
+        "longitude": 100.235291,
+        "latitude": 6.554248
+    },
+    {
+        "state": "JOHOR",
+        "longitude": 103.635312,
+        "latitude": 2.137204
+    },
+    {
+        "state": "MELAKA",
+        "longitude": 102.315515,
+        "latitude": 2.247448
+    },
+    {
+        "state": "TERENGGANU",
+        "longitude": 102.914311,
+        "latitude": 4.977067
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "longitude": 101.687171,
+        "latitude": 2.928692
+    }
+]

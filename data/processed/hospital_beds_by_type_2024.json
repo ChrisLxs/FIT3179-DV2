@@ -1,0 +1,338 @@
+[
+    {
+        "state": "JOHOR",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 4316
+    },
+    {
+        "state": "JOHOR",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "JOHOR",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 1132
+    },
+    {
+        "state": "KEDAH",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 2919
+    },
+    {
+        "state": "KEDAH",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "KEDAH",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "KELANTAN",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 2158
+    },
+    {
+        "state": "KELANTAN",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 829
+    },
+    {
+        "state": "KELANTAN",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "MELAKA",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 1349
+    },
+    {
+        "state": "MELAKA",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "MELAKA",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 1941
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 36
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "PAHANG",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 2356
+    },
+    {
+        "state": "PAHANG",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 290
+    },
+    {
+        "state": "PAHANG",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "PERAK",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 4071
+    },
+    {
+        "state": "PERAK",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 150
+    },
+    {
+        "state": "PERAK",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 1800
+    },
+    {
+        "state": "PERLIS",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 517
+    },
+    {
+        "state": "PERLIS",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "PERLIS",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "PULAU PINANG",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 2129
+    },
+    {
+        "state": "PULAU PINANG",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "PULAU PINANG",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "SABAH",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 4077
+    },
+    {
+        "state": "SABAH",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 40
+    },
+    {
+        "state": "SABAH",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 980
+    },
+    {
+        "state": "SARAWAK",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 3709
+    },
+    {
+        "state": "SARAWAK",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "SARAWAK",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 480
+    },
+    {
+        "state": "SELANGOR",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 7376
+    },
+    {
+        "state": "SELANGOR",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 866
+    },
+    {
+        "state": "SELANGOR",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 92
+    },
+    {
+        "state": "TERENGGANU",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 1871
+    },
+    {
+        "state": "TERENGGANU",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 100
+    },
+    {
+        "state": "TERENGGANU",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 1706
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 2882
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 910
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 122
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 0
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "year": 2024,
+        "type": "hospital_moh",
+        "category": "MOH Hospitals",
+        "beds": 592
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "year": 2024,
+        "type": "hospital_non_moh",
+        "category": "Non-MOH Hospitals",
+        "beds": 0
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "year": 2024,
+        "type": "special_medical_institution",
+        "category": "Special Medical Institutions",
+        "beds": 252
+    }
+]

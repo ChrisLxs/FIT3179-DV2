@@ -1,0 +1,242 @@
+[
+    {
+        "state": "JOHOR",
+        "category": "All facilities",
+        "facility_count": 589
+    },
+    {
+        "state": "JOHOR",
+        "category": "Hospitals",
+        "facility_count": 13
+    },
+    {
+        "state": "JOHOR",
+        "category": "Clinics",
+        "facility_count": 377
+    },
+    {
+        "state": "KEDAH",
+        "category": "All facilities",
+        "facility_count": 426
+    },
+    {
+        "state": "KEDAH",
+        "category": "Hospitals",
+        "facility_count": 10
+    },
+    {
+        "state": "KEDAH",
+        "category": "Clinics",
+        "facility_count": 258
+    },
+    {
+        "state": "KELANTAN",
+        "category": "All facilities",
+        "facility_count": 429
+    },
+    {
+        "state": "KELANTAN",
+        "category": "Hospitals",
+        "facility_count": 11
+    },
+    {
+        "state": "KELANTAN",
+        "category": "Clinics",
+        "facility_count": 241
+    },
+    {
+        "state": "MELAKA",
+        "category": "All facilities",
+        "facility_count": 169
+    },
+    {
+        "state": "MELAKA",
+        "category": "Hospitals",
+        "facility_count": 4
+    },
+    {
+        "state": "MELAKA",
+        "category": "Clinics",
+        "facility_count": 90
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "category": "All facilities",
+        "facility_count": 263
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "category": "Hospitals",
+        "facility_count": 8
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "category": "Clinics",
+        "facility_count": 151
+    },
+    {
+        "state": "PAHANG",
+        "category": "All facilities",
+        "facility_count": 522
+    },
+    {
+        "state": "PAHANG",
+        "category": "Hospitals",
+        "facility_count": 13
+    },
+    {
+        "state": "PAHANG",
+        "category": "Clinics",
+        "facility_count": 336
+    },
+    {
+        "state": "PERAK",
+        "category": "All facilities",
+        "facility_count": 492
+    },
+    {
+        "state": "PERAK",
+        "category": "Hospitals",
+        "facility_count": 16
+    },
+    {
+        "state": "PERAK",
+        "category": "Clinics",
+        "facility_count": 288
+    },
+    {
+        "state": "PERLIS",
+        "category": "All facilities",
+        "facility_count": 93
+    },
+    {
+        "state": "PERLIS",
+        "category": "Hospitals",
+        "facility_count": 1
+    },
+    {
+        "state": "PERLIS",
+        "category": "Clinics",
+        "facility_count": 39
+    },
+    {
+        "state": "PULAU PINANG",
+        "category": "All facilities",
+        "facility_count": 222
+    },
+    {
+        "state": "PULAU PINANG",
+        "category": "Hospitals",
+        "facility_count": 6
+    },
+    {
+        "state": "PULAU PINANG",
+        "category": "Clinics",
+        "facility_count": 100
+    },
+    {
+        "state": "SABAH",
+        "category": "All facilities",
+        "facility_count": 542
+    },
+    {
+        "state": "SABAH",
+        "category": "Hospitals",
+        "facility_count": 26
+    },
+    {
+        "state": "SABAH",
+        "category": "Clinics",
+        "facility_count": 325
+    },
+    {
+        "state": "SARAWAK",
+        "category": "All facilities",
+        "facility_count": 560
+    },
+    {
+        "state": "SARAWAK",
+        "category": "Hospitals",
+        "facility_count": 23
+    },
+    {
+        "state": "SARAWAK",
+        "category": "Clinics",
+        "facility_count": 270
+    },
+    {
+        "state": "SELANGOR",
+        "category": "All facilities",
+        "facility_count": 379
+    },
+    {
+        "state": "SELANGOR",
+        "category": "Hospitals",
+        "facility_count": 17
+    },
+    {
+        "state": "SELANGOR",
+        "category": "Clinics",
+        "facility_count": 210
+    },
+    {
+        "state": "TERENGGANU",
+        "category": "All facilities",
+        "facility_count": 290
+    },
+    {
+        "state": "TERENGGANU",
+        "category": "Hospitals",
+        "facility_count": 7
+    },
+    {
+        "state": "TERENGGANU",
+        "category": "Clinics",
+        "facility_count": 173
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "category": "All facilities",
+        "facility_count": 143
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "category": "Hospitals",
+        "facility_count": 8
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "category": "Clinics",
+        "facility_count": 41
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "category": "All facilities",
+        "facility_count": 25
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "category": "Hospitals",
+        "facility_count": 1
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "category": "Clinics",
+        "facility_count": 12
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "category": "All facilities",
+        "facility_count": 16
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "category": "Hospitals",
+        "facility_count": 2
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "category": "Clinics",
+        "facility_count": 4
+    }
+]

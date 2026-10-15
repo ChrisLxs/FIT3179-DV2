@@ -1,0 +1,98 @@
+[
+    {
+        "state": "JOHOR",
+        "facility_count": 589,
+        "population": 4184400,
+        "facilities_per_100000": 14.08
+    },
+    {
+        "state": "KEDAH",
+        "facility_count": 426,
+        "population": 2217100,
+        "facilities_per_100000": 19.21
+    },
+    {
+        "state": "KELANTAN",
+        "facility_count": 429,
+        "population": 1887900,
+        "facilities_per_100000": 22.72
+    },
+    {
+        "state": "MELAKA",
+        "facility_count": 169,
+        "population": 1046700,
+        "facilities_per_100000": 16.15
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "facility_count": 263,
+        "population": 1239500,
+        "facilities_per_100000": 21.22
+    },
+    {
+        "state": "PAHANG",
+        "facility_count": 522,
+        "population": 1667700,
+        "facilities_per_100000": 31.3
+    },
+    {
+        "state": "PERAK",
+        "facility_count": 492,
+        "population": 2569400,
+        "facilities_per_100000": 19.15
+    },
+    {
+        "state": "PERLIS",
+        "facility_count": 93,
+        "population": 296800,
+        "facilities_per_100000": 31.33
+    },
+    {
+        "state": "PULAU PINANG",
+        "facility_count": 222,
+        "population": 1800500,
+        "facilities_per_100000": 12.33
+    },
+    {
+        "state": "SABAH",
+        "facility_count": 542,
+        "population": 3742000,
+        "facilities_per_100000": 14.48
+    },
+    {
+        "state": "SARAWAK",
+        "facility_count": 560,
+        "population": 2517500,
+        "facilities_per_100000": 22.24
+    },
+    {
+        "state": "SELANGOR",
+        "facility_count": 379,
+        "population": 7362700,
+        "facilities_per_100000": 5.15
+    },
+    {
+        "state": "TERENGGANU",
+        "facility_count": 290,
+        "population": 1231500,
+        "facilities_per_100000": 23.55
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "facility_count": 143,
+        "population": 2067500,
+        "facilities_per_100000": 6.92
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "facility_count": 25,
+        "population": 100800,
+        "facilities_per_100000": 24.8
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "facility_count": 16,
+        "population": 120300,
+        "facilities_per_100000": 13.3
+    }
+]

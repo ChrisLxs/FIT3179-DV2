@@ -1,0 +1,641 @@
+state,year,type,beds
+JOHOR,2015,all,4968
+JOHOR,2015,hospital_moh,3836
+JOHOR,2015,hospital_non_moh,0
+JOHOR,2015,special_medical_institution,1132
+KEDAH,2015,all,2653
+KEDAH,2015,hospital_moh,2653
+KEDAH,2015,hospital_non_moh,0
+KEDAH,2015,special_medical_institution,0
+KELANTAN,2015,all,2509
+KELANTAN,2015,hospital_moh,1740
+KELANTAN,2015,hospital_non_moh,769
+KELANTAN,2015,special_medical_institution,0
+MELAKA,2015,all,1389
+MELAKA,2015,hospital_moh,1245
+MELAKA,2015,hospital_non_moh,144
+MELAKA,2015,special_medical_institution,0
+NEGERI SEMBILAN,2015,all,1825
+NEGERI SEMBILAN,2015,hospital_moh,1789
+NEGERI SEMBILAN,2015,hospital_non_moh,36
+NEGERI SEMBILAN,2015,special_medical_institution,0
+PAHANG,2015,all,2158
+PAHANG,2015,hospital_moh,2158
+PAHANG,2015,hospital_non_moh,0
+PAHANG,2015,special_medical_institution,0
+PERAK,2015,all,5762
+PERAK,2015,hospital_moh,3615
+PERAK,2015,hospital_non_moh,147
+PERAK,2015,special_medical_institution,2000
+PERLIS,2015,all,408
+PERLIS,2015,hospital_moh,408
+PERLIS,2015,hospital_non_moh,0
+PERLIS,2015,special_medical_institution,0
+PULAU PINANG,2015,all,2046
+PULAU PINANG,2015,hospital_moh,2046
+PULAU PINANG,2015,hospital_non_moh,0
+PULAU PINANG,2015,special_medical_institution,0
+SABAH,2015,all,4671
+SABAH,2015,hospital_moh,3825
+SABAH,2015,hospital_non_moh,40
+SABAH,2015,special_medical_institution,806
+SARAWAK,2015,all,3944
+SARAWAK,2015,hospital_moh,3606
+SARAWAK,2015,hospital_non_moh,0
+SARAWAK,2015,special_medical_institution,338
+SELANGOR,2015,all,5493
+SELANGOR,2015,hospital_moh,5275
+SELANGOR,2015,hospital_non_moh,88
+SELANGOR,2015,special_medical_institution,130
+TERENGGANU,2015,all,1645
+TERENGGANU,2015,hospital_moh,1645
+TERENGGANU,2015,hospital_non_moh,0
+TERENGGANU,2015,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2015,all,4901
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2015,hospital_moh,2143
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2015,hospital_non_moh,2474
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2015,special_medical_institution,284
+WILAYAH PERSEKUTUAN LABUAN,2015,all,122
+WILAYAH PERSEKUTUAN LABUAN,2015,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2015,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2015,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2015,all,593
+WILAYAH PERSEKUTUAN PUTRAJAYA,2015,hospital_moh,341
+WILAYAH PERSEKUTUAN PUTRAJAYA,2015,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2015,special_medical_institution,252
+JOHOR,2016,all,5185
+JOHOR,2016,hospital_moh,4053
+JOHOR,2016,hospital_non_moh,0
+JOHOR,2016,special_medical_institution,1132
+KEDAH,2016,all,2689
+KEDAH,2016,hospital_moh,2689
+KEDAH,2016,hospital_non_moh,0
+KEDAH,2016,special_medical_institution,0
+KELANTAN,2016,all,2589
+KELANTAN,2016,hospital_moh,1816
+KELANTAN,2016,hospital_non_moh,773
+KELANTAN,2016,special_medical_institution,0
+MELAKA,2016,all,1420
+MELAKA,2016,hospital_moh,1276
+MELAKA,2016,hospital_non_moh,144
+MELAKA,2016,special_medical_institution,0
+NEGERI SEMBILAN,2016,all,1825
+NEGERI SEMBILAN,2016,hospital_moh,1789
+NEGERI SEMBILAN,2016,hospital_non_moh,36
+NEGERI SEMBILAN,2016,special_medical_institution,0
+PAHANG,2016,all,2316
+PAHANG,2016,hospital_moh,2316
+PAHANG,2016,hospital_non_moh,0
+PAHANG,2016,special_medical_institution,0
+PERAK,2016,all,5542
+PERAK,2016,hospital_moh,3595
+PERAK,2016,hospital_non_moh,147
+PERAK,2016,special_medical_institution,1800
+PERLIS,2016,all,408
+PERLIS,2016,hospital_moh,408
+PERLIS,2016,hospital_non_moh,0
+PERLIS,2016,special_medical_institution,0
+PULAU PINANG,2016,all,2130
+PULAU PINANG,2016,hospital_moh,2130
+PULAU PINANG,2016,hospital_non_moh,0
+PULAU PINANG,2016,special_medical_institution,0
+SABAH,2016,all,4815
+SABAH,2016,hospital_moh,3989
+SABAH,2016,hospital_non_moh,20
+SABAH,2016,special_medical_institution,806
+SARAWAK,2016,all,3978
+SARAWAK,2016,hospital_moh,3640
+SARAWAK,2016,hospital_non_moh,0
+SARAWAK,2016,special_medical_institution,338
+SELANGOR,2016,all,5531
+SELANGOR,2016,hospital_moh,5353
+SELANGOR,2016,hospital_non_moh,88
+SELANGOR,2016,special_medical_institution,90
+TERENGGANU,2016,all,1645
+TERENGGANU,2016,hospital_moh,1645
+TERENGGANU,2016,hospital_non_moh,0
+TERENGGANU,2016,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2016,all,4890
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2016,hospital_moh,2131
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2016,hospital_non_moh,2475
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2016,special_medical_institution,284
+WILAYAH PERSEKUTUAN LABUAN,2016,all,122
+WILAYAH PERSEKUTUAN LABUAN,2016,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2016,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2016,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2016,all,593
+WILAYAH PERSEKUTUAN PUTRAJAYA,2016,hospital_moh,341
+WILAYAH PERSEKUTUAN PUTRAJAYA,2016,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2016,special_medical_institution,252
+JOHOR,2017,all,5185
+JOHOR,2017,hospital_moh,4053
+JOHOR,2017,hospital_non_moh,0
+JOHOR,2017,special_medical_institution,1132
+KEDAH,2017,all,2703
+KEDAH,2017,hospital_moh,2703
+KEDAH,2017,hospital_non_moh,0
+KEDAH,2017,special_medical_institution,0
+KELANTAN,2017,all,2590
+KELANTAN,2017,hospital_moh,1816
+KELANTAN,2017,hospital_non_moh,774
+KELANTAN,2017,special_medical_institution,0
+MELAKA,2017,all,1420
+MELAKA,2017,hospital_moh,1276
+MELAKA,2017,hospital_non_moh,144
+MELAKA,2017,special_medical_institution,0
+NEGERI SEMBILAN,2017,all,1832
+NEGERI SEMBILAN,2017,hospital_moh,1796
+NEGERI SEMBILAN,2017,hospital_non_moh,36
+NEGERI SEMBILAN,2017,special_medical_institution,0
+PAHANG,2017,all,2391
+PAHANG,2017,hospital_moh,2312
+PAHANG,2017,hospital_non_moh,79
+PAHANG,2017,special_medical_institution,0
+PERAK,2017,all,5542
+PERAK,2017,hospital_moh,3595
+PERAK,2017,hospital_non_moh,147
+PERAK,2017,special_medical_institution,1800
+PERLIS,2017,all,508
+PERLIS,2017,hospital_moh,508
+PERLIS,2017,hospital_non_moh,0
+PERLIS,2017,special_medical_institution,0
+PULAU PINANG,2017,all,2065
+PULAU PINANG,2017,hospital_moh,2065
+PULAU PINANG,2017,hospital_non_moh,0
+PULAU PINANG,2017,special_medical_institution,0
+SABAH,2017,all,4877
+SABAH,2017,hospital_moh,3931
+SABAH,2017,hospital_non_moh,20
+SABAH,2017,special_medical_institution,926
+SARAWAK,2017,all,3989
+SARAWAK,2017,hospital_moh,3651
+SARAWAK,2017,hospital_non_moh,0
+SARAWAK,2017,special_medical_institution,338
+SELANGOR,2017,all,5471
+SELANGOR,2017,hospital_moh,5273
+SELANGOR,2017,hospital_non_moh,88
+SELANGOR,2017,special_medical_institution,110
+TERENGGANU,2017,all,1696
+TERENGGANU,2017,hospital_moh,1696
+TERENGGANU,2017,hospital_non_moh,0
+TERENGGANU,2017,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2017,all,5009
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2017,hospital_moh,2131
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2017,hospital_non_moh,2604
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2017,special_medical_institution,274
+WILAYAH PERSEKUTUAN LABUAN,2017,all,122
+WILAYAH PERSEKUTUAN LABUAN,2017,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2017,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2017,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2017,all,654
+WILAYAH PERSEKUTUAN PUTRAJAYA,2017,hospital_moh,402
+WILAYAH PERSEKUTUAN PUTRAJAYA,2017,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2017,special_medical_institution,252
+JOHOR,2018,all,5200
+JOHOR,2018,hospital_moh,4068
+JOHOR,2018,hospital_non_moh,0
+JOHOR,2018,special_medical_institution,1132
+KEDAH,2018,all,2673
+KEDAH,2018,hospital_moh,2673
+KEDAH,2018,hospital_non_moh,0
+KEDAH,2018,special_medical_institution,0
+KELANTAN,2018,all,2659
+KELANTAN,2018,hospital_moh,1843
+KELANTAN,2018,hospital_non_moh,816
+KELANTAN,2018,special_medical_institution,0
+MELAKA,2018,all,1420
+MELAKA,2018,hospital_moh,1276
+MELAKA,2018,hospital_non_moh,144
+MELAKA,2018,special_medical_institution,0
+NEGERI SEMBILAN,2018,all,1825
+NEGERI SEMBILAN,2018,hospital_moh,1789
+NEGERI SEMBILAN,2018,hospital_non_moh,36
+NEGERI SEMBILAN,2018,special_medical_institution,0
+PAHANG,2018,all,2646
+PAHANG,2018,hospital_moh,2316
+PAHANG,2018,hospital_non_moh,330
+PAHANG,2018,special_medical_institution,0
+PERAK,2018,all,5542
+PERAK,2018,hospital_moh,3595
+PERAK,2018,hospital_non_moh,147
+PERAK,2018,special_medical_institution,1800
+PERLIS,2018,all,508
+PERLIS,2018,hospital_moh,508
+PERLIS,2018,hospital_non_moh,0
+PERLIS,2018,special_medical_institution,0
+PULAU PINANG,2018,all,2118
+PULAU PINANG,2018,hospital_moh,2118
+PULAU PINANG,2018,hospital_non_moh,0
+PULAU PINANG,2018,special_medical_institution,0
+SABAH,2018,all,4848
+SABAH,2018,hospital_moh,3894
+SABAH,2018,hospital_non_moh,40
+SABAH,2018,special_medical_institution,914
+SARAWAK,2018,all,4051
+SARAWAK,2018,hospital_moh,3708
+SARAWAK,2018,hospital_non_moh,0
+SARAWAK,2018,special_medical_institution,343
+SELANGOR,2018,all,5602
+SELANGOR,2018,hospital_moh,5424
+SELANGOR,2018,hospital_non_moh,88
+SELANGOR,2018,special_medical_institution,90
+TERENGGANU,2018,all,1680
+TERENGGANU,2018,hospital_moh,1680
+TERENGGANU,2018,hospital_non_moh,0
+TERENGGANU,2018,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2018,all,4995
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2018,hospital_moh,2125
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2018,hospital_non_moh,2586
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2018,special_medical_institution,284
+WILAYAH PERSEKUTUAN LABUAN,2018,all,122
+WILAYAH PERSEKUTUAN LABUAN,2018,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2018,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2018,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2018,all,722
+WILAYAH PERSEKUTUAN PUTRAJAYA,2018,hospital_moh,470
+WILAYAH PERSEKUTUAN PUTRAJAYA,2018,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2018,special_medical_institution,252
+JOHOR,2019,all,5200
+JOHOR,2019,hospital_moh,4068
+JOHOR,2019,hospital_non_moh,0
+JOHOR,2019,special_medical_institution,1132
+KEDAH,2019,all,2711
+KEDAH,2019,hospital_moh,2711
+KEDAH,2019,hospital_non_moh,0
+KEDAH,2019,special_medical_institution,0
+KELANTAN,2019,all,2787
+KELANTAN,2019,hospital_moh,1958
+KELANTAN,2019,hospital_non_moh,829
+KELANTAN,2019,special_medical_institution,0
+MELAKA,2019,all,1429
+MELAKA,2019,hospital_moh,1285
+MELAKA,2019,hospital_non_moh,144
+MELAKA,2019,special_medical_institution,0
+NEGERI SEMBILAN,2019,all,1898
+NEGERI SEMBILAN,2019,hospital_moh,1862
+NEGERI SEMBILAN,2019,hospital_non_moh,36
+NEGERI SEMBILAN,2019,special_medical_institution,0
+PAHANG,2019,all,2581
+PAHANG,2019,hospital_moh,2316
+PAHANG,2019,hospital_non_moh,265
+PAHANG,2019,special_medical_institution,0
+PERAK,2019,all,5542
+PERAK,2019,hospital_moh,3595
+PERAK,2019,hospital_non_moh,147
+PERAK,2019,special_medical_institution,1800
+PERLIS,2019,all,508
+PERLIS,2019,hospital_moh,508
+PERLIS,2019,hospital_non_moh,0
+PERLIS,2019,special_medical_institution,0
+PULAU PINANG,2019,all,2113
+PULAU PINANG,2019,hospital_moh,2113
+PULAU PINANG,2019,hospital_non_moh,0
+PULAU PINANG,2019,special_medical_institution,0
+SABAH,2019,all,4876
+SABAH,2019,hospital_moh,3922
+SABAH,2019,hospital_non_moh,40
+SABAH,2019,special_medical_institution,914
+SARAWAK,2019,all,4083
+SARAWAK,2019,hospital_moh,3740
+SARAWAK,2019,hospital_non_moh,0
+SARAWAK,2019,special_medical_institution,343
+SELANGOR,2019,all,5907
+SELANGOR,2019,hospital_moh,5739
+SELANGOR,2019,hospital_non_moh,88
+SELANGOR,2019,special_medical_institution,80
+TERENGGANU,2019,all,1698
+TERENGGANU,2019,hospital_moh,1698
+TERENGGANU,2019,hospital_non_moh,0
+TERENGGANU,2019,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2019,all,4912
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2019,hospital_moh,2125
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2019,hospital_non_moh,2503
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2019,special_medical_institution,284
+WILAYAH PERSEKUTUAN LABUAN,2019,all,122
+WILAYAH PERSEKUTUAN LABUAN,2019,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2019,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2019,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2019,all,621
+WILAYAH PERSEKUTUAN PUTRAJAYA,2019,hospital_moh,369
+WILAYAH PERSEKUTUAN PUTRAJAYA,2019,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2019,special_medical_institution,252
+JOHOR,2020,all,5270
+JOHOR,2020,hospital_moh,4138
+JOHOR,2020,hospital_non_moh,0
+JOHOR,2020,special_medical_institution,1132
+KEDAH,2020,all,2702
+KEDAH,2020,hospital_moh,2702
+KEDAH,2020,hospital_non_moh,0
+KEDAH,2020,special_medical_institution,0
+KELANTAN,2020,all,2786
+KELANTAN,2020,hospital_moh,1957
+KELANTAN,2020,hospital_non_moh,829
+KELANTAN,2020,special_medical_institution,0
+MELAKA,2020,all,1429
+MELAKA,2020,hospital_moh,1285
+MELAKA,2020,hospital_non_moh,144
+MELAKA,2020,special_medical_institution,0
+NEGERI SEMBILAN,2020,all,1977
+NEGERI SEMBILAN,2020,hospital_moh,1941
+NEGERI SEMBILAN,2020,hospital_non_moh,36
+NEGERI SEMBILAN,2020,special_medical_institution,0
+PAHANG,2020,all,2646
+PAHANG,2020,hospital_moh,2316
+PAHANG,2020,hospital_non_moh,330
+PAHANG,2020,special_medical_institution,0
+PERAK,2020,all,5542
+PERAK,2020,hospital_moh,3595
+PERAK,2020,hospital_non_moh,147
+PERAK,2020,special_medical_institution,1800
+PERLIS,2020,all,508
+PERLIS,2020,hospital_moh,508
+PERLIS,2020,hospital_non_moh,0
+PERLIS,2020,special_medical_institution,0
+PULAU PINANG,2020,all,2113
+PULAU PINANG,2020,hospital_moh,2113
+PULAU PINANG,2020,hospital_non_moh,0
+PULAU PINANG,2020,special_medical_institution,0
+SABAH,2020,all,5013
+SABAH,2020,hospital_moh,4013
+SABAH,2020,hospital_non_moh,40
+SABAH,2020,special_medical_institution,960
+SARAWAK,2020,all,4146
+SARAWAK,2020,hospital_moh,3680
+SARAWAK,2020,hospital_non_moh,0
+SARAWAK,2020,special_medical_institution,466
+SELANGOR,2020,all,6131
+SELANGOR,2020,hospital_moh,5963
+SELANGOR,2020,hospital_non_moh,88
+SELANGOR,2020,special_medical_institution,80
+TERENGGANU,2020,all,1700
+TERENGGANU,2020,hospital_moh,1700
+TERENGGANU,2020,hospital_non_moh,0
+TERENGGANU,2020,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2020,all,5583
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2020,hospital_moh,2125
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2020,hospital_non_moh,2574
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2020,special_medical_institution,884
+WILAYAH PERSEKUTUAN LABUAN,2020,all,122
+WILAYAH PERSEKUTUAN LABUAN,2020,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2020,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2020,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2020,all,637
+WILAYAH PERSEKUTUAN PUTRAJAYA,2020,hospital_moh,385
+WILAYAH PERSEKUTUAN PUTRAJAYA,2020,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2020,special_medical_institution,252
+JOHOR,2021,all,5278
+JOHOR,2021,hospital_moh,4146
+JOHOR,2021,hospital_non_moh,0
+JOHOR,2021,special_medical_institution,1132
+KEDAH,2021,all,2755
+KEDAH,2021,hospital_moh,2755
+KEDAH,2021,hospital_non_moh,0
+KEDAH,2021,special_medical_institution,0
+KELANTAN,2021,all,2812
+KELANTAN,2021,hospital_moh,1983
+KELANTAN,2021,hospital_non_moh,829
+KELANTAN,2021,special_medical_institution,0
+MELAKA,2021,all,1439
+MELAKA,2021,hospital_moh,1295
+MELAKA,2021,hospital_non_moh,144
+MELAKA,2021,special_medical_institution,0
+NEGERI SEMBILAN,2021,all,1977
+NEGERI SEMBILAN,2021,hospital_moh,1941
+NEGERI SEMBILAN,2021,hospital_non_moh,36
+NEGERI SEMBILAN,2021,special_medical_institution,0
+PAHANG,2021,all,2611
+PAHANG,2021,hospital_moh,2316
+PAHANG,2021,hospital_non_moh,295
+PAHANG,2021,special_medical_institution,0
+PERAK,2021,all,5924
+PERAK,2021,hospital_moh,3977
+PERAK,2021,hospital_non_moh,147
+PERAK,2021,special_medical_institution,1800
+PERLIS,2021,all,508
+PERLIS,2021,hospital_moh,508
+PERLIS,2021,hospital_non_moh,0
+PERLIS,2021,special_medical_institution,0
+PULAU PINANG,2021,all,2133
+PULAU PINANG,2021,hospital_moh,2133
+PULAU PINANG,2021,hospital_non_moh,0
+PULAU PINANG,2021,special_medical_institution,0
+SABAH,2021,all,5023
+SABAH,2021,hospital_moh,4043
+SABAH,2021,hospital_non_moh,20
+SABAH,2021,special_medical_institution,960
+SARAWAK,2021,all,4099
+SARAWAK,2021,hospital_moh,3633
+SARAWAK,2021,hospital_non_moh,0
+SARAWAK,2021,special_medical_institution,466
+SELANGOR,2021,all,7159
+SELANGOR,2021,hospital_moh,6179
+SELANGOR,2021,hospital_non_moh,888
+SELANGOR,2021,special_medical_institution,92
+TERENGGANU,2021,all,1722
+TERENGGANU,2021,hospital_moh,1722
+TERENGGANU,2021,hospital_non_moh,0
+TERENGGANU,2021,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2021,all,5582
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2021,hospital_moh,2125
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2021,hospital_non_moh,2573
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2021,special_medical_institution,884
+WILAYAH PERSEKUTUAN LABUAN,2021,all,122
+WILAYAH PERSEKUTUAN LABUAN,2021,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2021,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2021,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2021,all,637
+WILAYAH PERSEKUTUAN PUTRAJAYA,2021,hospital_moh,385
+WILAYAH PERSEKUTUAN PUTRAJAYA,2021,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2021,special_medical_institution,252
+JOHOR,2022,all,5433
+JOHOR,2022,hospital_moh,4301
+JOHOR,2022,hospital_non_moh,0
+JOHOR,2022,special_medical_institution,1132
+KEDAH,2022,all,2762
+KEDAH,2022,hospital_moh,2762
+KEDAH,2022,hospital_non_moh,0
+KEDAH,2022,special_medical_institution,0
+KELANTAN,2022,all,2970
+KELANTAN,2022,hospital_moh,2141
+KELANTAN,2022,hospital_non_moh,829
+KELANTAN,2022,special_medical_institution,0
+MELAKA,2022,all,1454
+MELAKA,2022,hospital_moh,1310
+MELAKA,2022,hospital_non_moh,144
+MELAKA,2022,special_medical_institution,0
+NEGERI SEMBILAN,2022,all,1977
+NEGERI SEMBILAN,2022,hospital_moh,1941
+NEGERI SEMBILAN,2022,hospital_non_moh,36
+NEGERI SEMBILAN,2022,special_medical_institution,0
+PAHANG,2022,all,2681
+PAHANG,2022,hospital_moh,2356
+PAHANG,2022,hospital_non_moh,325
+PAHANG,2022,special_medical_institution,0
+PERAK,2022,all,5887
+PERAK,2022,hospital_moh,3977
+PERAK,2022,hospital_non_moh,110
+PERAK,2022,special_medical_institution,1800
+PERLIS,2022,all,508
+PERLIS,2022,hospital_moh,508
+PERLIS,2022,hospital_non_moh,0
+PERLIS,2022,special_medical_institution,0
+PULAU PINANG,2022,all,2138
+PULAU PINANG,2022,hospital_moh,2138
+PULAU PINANG,2022,hospital_non_moh,0
+PULAU PINANG,2022,special_medical_institution,0
+SABAH,2022,all,5053
+SABAH,2022,hospital_moh,4053
+SABAH,2022,hospital_non_moh,40
+SABAH,2022,special_medical_institution,960
+SARAWAK,2022,all,4119
+SARAWAK,2022,hospital_moh,3653
+SARAWAK,2022,hospital_non_moh,0
+SARAWAK,2022,special_medical_institution,466
+SELANGOR,2022,all,7640
+SELANGOR,2022,hospital_moh,6651
+SELANGOR,2022,hospital_non_moh,897
+SELANGOR,2022,special_medical_institution,92
+TERENGGANU,2022,all,1730
+TERENGGANU,2022,hospital_moh,1730
+TERENGGANU,2022,hospital_non_moh,0
+TERENGGANU,2022,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2022,all,4874
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2022,hospital_moh,1553
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2022,hospital_non_moh,2437
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2022,special_medical_institution,884
+WILAYAH PERSEKUTUAN LABUAN,2022,all,122
+WILAYAH PERSEKUTUAN LABUAN,2022,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2022,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2022,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2022,all,637
+WILAYAH PERSEKUTUAN PUTRAJAYA,2022,hospital_moh,385
+WILAYAH PERSEKUTUAN PUTRAJAYA,2022,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2022,special_medical_institution,252
+JOHOR,2023,all,5433
+JOHOR,2023,hospital_moh,4301
+JOHOR,2023,hospital_non_moh,0
+JOHOR,2023,special_medical_institution,1132
+KEDAH,2023,all,2911
+KEDAH,2023,hospital_moh,2911
+KEDAH,2023,hospital_non_moh,0
+KEDAH,2023,special_medical_institution,0
+KELANTAN,2023,all,2970
+KELANTAN,2023,hospital_moh,2141
+KELANTAN,2023,hospital_non_moh,829
+KELANTAN,2023,special_medical_institution,0
+MELAKA,2023,all,1454
+MELAKA,2023,hospital_moh,1310
+MELAKA,2023,hospital_non_moh,144
+MELAKA,2023,special_medical_institution,0
+NEGERI SEMBILAN,2023,all,1977
+NEGERI SEMBILAN,2023,hospital_moh,1941
+NEGERI SEMBILAN,2023,hospital_non_moh,36
+NEGERI SEMBILAN,2023,special_medical_institution,0
+PAHANG,2023,all,2681
+PAHANG,2023,hospital_moh,2356
+PAHANG,2023,hospital_non_moh,325
+PAHANG,2023,special_medical_institution,0
+PERAK,2023,all,5927
+PERAK,2023,hospital_moh,3977
+PERAK,2023,hospital_non_moh,150
+PERAK,2023,special_medical_institution,1800
+PERLIS,2023,all,508
+PERLIS,2023,hospital_moh,508
+PERLIS,2023,hospital_non_moh,0
+PERLIS,2023,special_medical_institution,0
+PULAU PINANG,2023,all,2129
+PULAU PINANG,2023,hospital_moh,2129
+PULAU PINANG,2023,hospital_non_moh,0
+PULAU PINANG,2023,special_medical_institution,0
+SABAH,2023,all,5073
+SABAH,2023,hospital_moh,4053
+SABAH,2023,hospital_non_moh,40
+SABAH,2023,special_medical_institution,980
+SARAWAK,2023,all,4160
+SARAWAK,2023,hospital_moh,3684
+SARAWAK,2023,hospital_non_moh,0
+SARAWAK,2023,special_medical_institution,476
+SELANGOR,2023,all,8032
+SELANGOR,2023,hospital_moh,7074
+SELANGOR,2023,hospital_non_moh,866
+SELANGOR,2023,special_medical_institution,92
+TERENGGANU,2023,all,1840
+TERENGGANU,2023,hospital_moh,1740
+TERENGGANU,2023,hospital_non_moh,100
+TERENGGANU,2023,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2023,all,5246
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2023,hospital_moh,1716
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2023,hospital_non_moh,2646
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2023,special_medical_institution,884
+WILAYAH PERSEKUTUAN LABUAN,2023,all,122
+WILAYAH PERSEKUTUAN LABUAN,2023,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2023,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2023,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2023,all,637
+WILAYAH PERSEKUTUAN PUTRAJAYA,2023,hospital_moh,385
+WILAYAH PERSEKUTUAN PUTRAJAYA,2023,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2023,special_medical_institution,252
+JOHOR,2024,all,5448
+JOHOR,2024,hospital_moh,4316
+JOHOR,2024,hospital_non_moh,0
+JOHOR,2024,special_medical_institution,1132
+KEDAH,2024,all,2919
+KEDAH,2024,hospital_moh,2919
+KEDAH,2024,hospital_non_moh,0
+KEDAH,2024,special_medical_institution,0
+KELANTAN,2024,all,2987
+KELANTAN,2024,hospital_moh,2158
+KELANTAN,2024,hospital_non_moh,829
+KELANTAN,2024,special_medical_institution,0
+MELAKA,2024,all,1349
+MELAKA,2024,hospital_moh,1349
+MELAKA,2024,hospital_non_moh,0
+MELAKA,2024,special_medical_institution,0
+NEGERI SEMBILAN,2024,all,1977
+NEGERI SEMBILAN,2024,hospital_moh,1941
+NEGERI SEMBILAN,2024,hospital_non_moh,36
+NEGERI SEMBILAN,2024,special_medical_institution,0
+PAHANG,2024,all,2646
+PAHANG,2024,hospital_moh,2356
+PAHANG,2024,hospital_non_moh,290
+PAHANG,2024,special_medical_institution,0
+PERAK,2024,all,6021
+PERAK,2024,hospital_moh,4071
+PERAK,2024,hospital_non_moh,150
+PERAK,2024,special_medical_institution,1800
+PERLIS,2024,all,517
+PERLIS,2024,hospital_moh,517
+PERLIS,2024,hospital_non_moh,0
+PERLIS,2024,special_medical_institution,0
+PULAU PINANG,2024,all,2129
+PULAU PINANG,2024,hospital_moh,2129
+PULAU PINANG,2024,hospital_non_moh,0
+PULAU PINANG,2024,special_medical_institution,0
+SABAH,2024,all,5097
+SABAH,2024,hospital_moh,4077
+SABAH,2024,hospital_non_moh,40
+SABAH,2024,special_medical_institution,980
+SARAWAK,2024,all,4189
+SARAWAK,2024,hospital_moh,3709
+SARAWAK,2024,hospital_non_moh,0
+SARAWAK,2024,special_medical_institution,480
+SELANGOR,2024,all,8334
+SELANGOR,2024,hospital_moh,7376
+SELANGOR,2024,hospital_non_moh,866
+SELANGOR,2024,special_medical_institution,92
+TERENGGANU,2024,all,1971
+TERENGGANU,2024,hospital_moh,1871
+TERENGGANU,2024,hospital_non_moh,100
+TERENGGANU,2024,special_medical_institution,0
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2024,all,5498
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2024,hospital_moh,1706
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2024,hospital_non_moh,2882
+WILAYAH PERSEKUTUAN KUALA LUMPUR,2024,special_medical_institution,910
+WILAYAH PERSEKUTUAN LABUAN,2024,all,122
+WILAYAH PERSEKUTUAN LABUAN,2024,hospital_moh,122
+WILAYAH PERSEKUTUAN LABUAN,2024,hospital_non_moh,0
+WILAYAH PERSEKUTUAN LABUAN,2024,special_medical_institution,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2024,all,844
+WILAYAH PERSEKUTUAN PUTRAJAYA,2024,hospital_moh,592
+WILAYAH PERSEKUTUAN PUTRAJAYA,2024,hospital_non_moh,0
+WILAYAH PERSEKUTUAN PUTRAJAYA,2024,special_medical_institution,252

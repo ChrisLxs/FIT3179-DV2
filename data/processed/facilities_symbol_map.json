@@ -1,0 +1,338 @@
+[
+    {
+        "state": "JOHOR",
+        "category": "All facilities",
+        "facility_count": 589,
+        "longitude": 103.635312,
+        "latitude": 2.137204
+    },
+    {
+        "state": "JOHOR",
+        "category": "Hospitals",
+        "facility_count": 13,
+        "longitude": 103.635312,
+        "latitude": 2.137204
+    },
+    {
+        "state": "JOHOR",
+        "category": "Clinics",
+        "facility_count": 377,
+        "longitude": 103.635312,
+        "latitude": 2.137204
+    },
+    {
+        "state": "KEDAH",
+        "category": "All facilities",
+        "facility_count": 426,
+        "longitude": 100.246698,
+        "latitude": 6.052368
+    },
+    {
+        "state": "KEDAH",
+        "category": "Hospitals",
+        "facility_count": 10,
+        "longitude": 100.246698,
+        "latitude": 6.052368
+    },
+    {
+        "state": "KEDAH",
+        "category": "Clinics",
+        "facility_count": 258,
+        "longitude": 100.246698,
+        "latitude": 6.052368
+    },
+    {
+        "state": "KELANTAN",
+        "category": "All facilities",
+        "facility_count": 429,
+        "longitude": 101.97095,
+        "latitude": 5.240806
+    },
+    {
+        "state": "KELANTAN",
+        "category": "Hospitals",
+        "facility_count": 11,
+        "longitude": 101.97095,
+        "latitude": 5.240806
+    },
+    {
+        "state": "KELANTAN",
+        "category": "Clinics",
+        "facility_count": 241,
+        "longitude": 101.97095,
+        "latitude": 5.240806
+    },
+    {
+        "state": "MELAKA",
+        "category": "All facilities",
+        "facility_count": 169,
+        "longitude": 102.315515,
+        "latitude": 2.247448
+    },
+    {
+        "state": "MELAKA",
+        "category": "Hospitals",
+        "facility_count": 4,
+        "longitude": 102.315515,
+        "latitude": 2.247448
+    },
+    {
+        "state": "MELAKA",
+        "category": "Clinics",
+        "facility_count": 90,
+        "longitude": 102.315515,
+        "latitude": 2.247448
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "category": "All facilities",
+        "facility_count": 263,
+        "longitude": 102.132546,
+        "latitude": 2.745134
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "category": "Hospitals",
+        "facility_count": 8,
+        "longitude": 102.132546,
+        "latitude": 2.745134
+    },
+    {
+        "state": "NEGERI SEMBILAN",
+        "category": "Clinics",
+        "facility_count": 151,
+        "longitude": 102.132546,
+        "latitude": 2.745134
+    },
+    {
+        "state": "PAHANG",
+        "category": "All facilities",
+        "facility_count": 522,
+        "longitude": 102.633494,
+        "latitude": 3.883038
+    },
+    {
+        "state": "PAHANG",
+        "category": "Hospitals",
+        "facility_count": 13,
+        "longitude": 102.633494,
+        "latitude": 3.883038
+    },
+    {
+        "state": "PAHANG",
+        "category": "Clinics",
+        "facility_count": 336,
+        "longitude": 102.633494,
+        "latitude": 3.883038
+    },
+    {
+        "state": "PERAK",
+        "category": "All facilities",
+        "facility_count": 492,
+        "longitude": 101.1292,
+        "latitude": 4.718914
+    },
+    {
+        "state": "PERAK",
+        "category": "Hospitals",
+        "facility_count": 16,
+        "longitude": 101.1292,
+        "latitude": 4.718914
+    },
+    {
+        "state": "PERAK",
+        "category": "Clinics",
+        "facility_count": 288,
+        "longitude": 101.1292,
+        "latitude": 4.718914
+    },
+    {
+        "state": "PERLIS",
+        "category": "All facilities",
+        "facility_count": 93,
+        "longitude": 100.235291,
+        "latitude": 6.554248
+    },
+    {
+        "state": "PERLIS",
+        "category": "Hospitals",
+        "facility_count": 1,
+        "longitude": 100.235291,
+        "latitude": 6.554248
+    },
+    {
+        "state": "PERLIS",
+        "category": "Clinics",
+        "facility_count": 39,
+        "longitude": 100.235291,
+        "latitude": 6.554248
+    },
+    {
+        "state": "PULAU PINANG",
+        "category": "All facilities",
+        "facility_count": 222,
+        "longitude": 100.32092,
+        "latitude": 5.379217
+    },
+    {
+        "state": "PULAU PINANG",
+        "category": "Hospitals",
+        "facility_count": 6,
+        "longitude": 100.32092,
+        "latitude": 5.379217
+    },
+    {
+        "state": "PULAU PINANG",
+        "category": "Clinics",
+        "facility_count": 100,
+        "longitude": 100.32092,
+        "latitude": 5.379217
+    },
+    {
+        "state": "SABAH",
+        "category": "All facilities",
+        "facility_count": 542,
+        "longitude": 117.471044,
+        "latitude": 5.577634
+    },
+    {
+        "state": "SABAH",
+        "category": "Hospitals",
+        "facility_count": 26,
+        "longitude": 117.471044,
+        "latitude": 5.577634
+    },
+    {
+        "state": "SABAH",
+        "category": "Clinics",
+        "facility_count": 325,
+        "longitude": 117.471044,
+        "latitude": 5.577634
+    },
+    {
+        "state": "SARAWAK",
+        "category": "All facilities",
+        "facility_count": 560,
+        "longitude": 113.089823,
+        "latitude": 2.631467
+    },
+    {
+        "state": "SARAWAK",
+        "category": "Hospitals",
+        "facility_count": 23,
+        "longitude": 113.089823,
+        "latitude": 2.631467
+    },
+    {
+        "state": "SARAWAK",
+        "category": "Clinics",
+        "facility_count": 270,
+        "longitude": 113.089823,
+        "latitude": 2.631467
+    },
+    {
+        "state": "SELANGOR",
+        "category": "All facilities",
+        "facility_count": 379,
+        "longitude": 101.368335,
+        "latitude": 3.341204
+    },
+    {
+        "state": "SELANGOR",
+        "category": "Hospitals",
+        "facility_count": 17,
+        "longitude": 101.368335,
+        "latitude": 3.341204
+    },
+    {
+        "state": "SELANGOR",
+        "category": "Clinics",
+        "facility_count": 210,
+        "longitude": 101.368335,
+        "latitude": 3.341204
+    },
+    {
+        "state": "TERENGGANU",
+        "category": "All facilities",
+        "facility_count": 290,
+        "longitude": 102.914311,
+        "latitude": 4.977067
+    },
+    {
+        "state": "TERENGGANU",
+        "category": "Hospitals",
+        "facility_count": 7,
+        "longitude": 102.914311,
+        "latitude": 4.977067
+    },
+    {
+        "state": "TERENGGANU",
+        "category": "Clinics",
+        "facility_count": 173,
+        "longitude": 102.914311,
+        "latitude": 4.977067
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "category": "All facilities",
+        "facility_count": 143,
+        "longitude": 101.69936,
+        "latitude": 3.142881
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "category": "Hospitals",
+        "facility_count": 8,
+        "longitude": 101.69936,
+        "latitude": 3.142881
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+        "category": "Clinics",
+        "facility_count": 41,
+        "longitude": 101.69936,
+        "latitude": 3.142881
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "category": "All facilities",
+        "facility_count": 25,
+        "longitude": 115.215184,
+        "latitude": 5.277212
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "category": "Hospitals",
+        "facility_count": 1,
+        "longitude": 115.215184,
+        "latitude": 5.277212
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN LABUAN",
+        "category": "Clinics",
+        "facility_count": 12,
+        "longitude": 115.215184,
+        "latitude": 5.277212
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "category": "All facilities",
+        "facility_count": 16,
+        "longitude": 101.687171,
+        "latitude": 2.928692
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "category": "Hospitals",
+        "facility_count": 2,
+        "longitude": 101.687171,
+        "latitude": 2.928692
+    },
+    {
+        "state": "WILAYAH PERSEKUTUAN PUTRAJAYA",
+        "category": "Clinics",
+        "facility_count": 4,
+        "longitude": 101.687171,
+        "latitude": 2.928692
+    }
+]

@@ -1,0 +1,1605 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Malaysia Healthcare Accessibility</title>
+
+    <!-- Vega-Lite libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #64748b;
+        }
+
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 24px;
+            margin-top: 32px;
+            overflow-x: auto;
+        }
+
+        .chart-card h2 {
+            margin-top: 0;
+        }
+
+        #beds-chart,
+        #malaysia-map {
+            margin-top: 24px;
+        }
+
+        .chart-note {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 20px;
+        }
+
+
+        .key-finding {
+            background: #eff6ff;
+            border-left: 4px solid #2563eb;
+            padding: 16px 20px;
+            margin-top: 24px;
+            border-radius: 4px;
+        }
+
+        .key-finding h3 {
+            margin-top: 0;
+            color: #1e40af;
+        }
+
+        .key-finding p {
+            line-height: 1.6;
+        }
+
+
+        /* Dashboard navigation */
+        .dashboard-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        .dashboard-nav a {
+            background: #ffffff;
+            color: #2563eb;
+            padding: 12px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            border: 1px solid #dbeafe;
+        }
+
+        .dashboard-nav a:hover {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Dashboard visual improvements */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #64748b;
+            margin-bottom: 32px;
+        }
+
+        .chart-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 30px;
+            margin-top: 28px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+            overflow-x: auto;
+        }
+
+        .chart-card h2 {
+            font-size: 22px;
+            color: #0f172a;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+
+        .chart-card p {
+            max-width: 850px;
+            color: #475569;
+        }
+
+        .chart-note {
+            font-size: 13px;
+            color: #64748b !important;
+            margin-top: 24px;
+            padding-top: 14px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .chart-card[id] {
+            scroll-margin-top: 24px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 12px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .chart-card {
+                padding: 18px;
+            }
+
+            .chart-card h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <h1>Malaysia Healthcare Accessibility</h1>
+
+        <p class="subtitle">
+            Are healthcare resources distributed fairly
+            across Malaysia?
+        </p>
+
+
+        <!-- Dashboard introduction -->
+        <section class="chart-card">
+            <h2>Understanding Healthcare Accessibility in Malaysia</h2>
+
+            <p>
+                Healthcare resources are not distributed equally
+                across Malaysia. Differences in population size,
+                geographical location, and healthcare infrastructure
+                can influence the availability of medical services.
+            </p>
+
+            <p>
+                This dashboard explores three key questions:
+            </p>
+
+            <ol>
+                <li>
+                    How does hospital bed availability differ
+                    across Malaysian states?
+                </li>
+
+                <li>
+                    Where are public healthcare facilities located,
+                    and how are they distributed relative to population?
+                </li>
+
+                <li>
+                    How have healthcare resources changed over time,
+                    and what differences exist between states?
+                </li>
+            </ol>
+
+            <p class="chart-note">
+                Data includes public healthcare facility records,
+                hospital bed statistics, and population estimates.
+                Resource availability is used as an indicator,
+                not a direct measurement of healthcare quality
+                or travel-time accessibility.
+            </p>
+        </section>
+
+
+        <!-- Dashboard navigation -->
+        <nav class="dashboard-nav">
+            <a href="#hospital-beds">Hospital Beds</a>
+            <a href="#historical-trends">Historical Trends</a>
+            <a href="#facility-distribution">Facility Distribution</a>
+            <a href="#resource-comparison">Resource Comparison</a>
+        </nav>
+
+
+
+        <!-- Chart 1: Hospital beds by state -->
+        <section class="chart-card" id="hospital-beds">
+            <h2>Hospital Beds per 10,000 Residents (2024)</h2>
+
+            <p>
+                Comparing hospital bed capacity relative to
+                population across Malaysian states and
+                federal territories.
+            </p>
+
+            <div id="beds-chart"></div>
+
+
+            <div class="key-finding">
+                <h3>Key Finding: Large Differences in Bed Availability</h3>
+
+                <p>
+                    Putrajaya has approximately 70.16 hospital beds
+                    per 10,000 residents, compared with only 11.32
+                    in Selangor. Kuala Lumpur records 26.59 beds
+                    per 10,000 residents.
+                </p>
+
+                <p>
+                    This suggests substantial differences in
+                    hospital bed availability relative to resident
+                    population. However, hospitals may serve patients
+                    from neighbouring states, so these figures
+                    should not be interpreted as direct measures
+                    of healthcare accessibility.
+                </p>
+            </div>
+
+
+            <p class="chart-note">
+                Note: Higher bed availability does not necessarily
+                indicate better healthcare access. Hospitals may
+                also serve patients from neighbouring states.
+            </p>
+        </section>
+
+        <!-- Chart 2: Malaysia choropleth map -->
+        <section class="chart-card">
+            <h2>Geographical Distribution of Hospital Beds (2024)</h2>
+
+            <p>
+                Explore differences in hospital bed capacity
+                across Malaysian states and federal territories.
+                Darker colours indicate more hospital beds
+                per 10,000 residents.
+            </p>
+
+            <div id="malaysia-map"></div>
+
+
+            <div class="key-finding">
+                <h3>Key Finding</h3>
+
+                <p>
+                    Putrajaya records approximately 70.16 hospital beds
+                    per 10,000 residents, compared with 11.32 in Selangor.
+                    This highlights a substantial difference in hospital
+                    bed capacity relative to the resident population.
+                </p>
+
+                <p>
+                    However, hospital beds are not necessarily used only
+                    by residents of the same state. Cross-border patient
+                    movement and differences in population size should
+                    be considered when interpreting these figures.
+                </p>
+            </div>
+
+
+            <p class="chart-note">
+                Note: Hospital bed capacity is not a direct
+                measure of healthcare accessibility.
+            </p>
+        </section>
+
+        <!-- Chart 3: Hospital bed trends -->
+        <section class="chart-card" id="historical-trends">
+            <h2>Hospital Bed Availability Over Time (2015–2024)</h2>
+
+            <p>
+                Explore how hospital bed capacity per 10,000 residents
+                has changed over time. Select a state or federal
+                territory to examine its trend.
+            </p>
+
+            <div id="beds-trend-chart"></div>
+
+
+            <div class="key-finding">
+                <h3>Key Finding: Healthcare Capacity Changes Over Time</h3>
+
+                <p>
+                    Hospital bed availability can change over time
+                    as both the number of hospital beds and the
+                    resident population change.
+                </p>
+
+                <p>
+                    Use the state selector to compare 2015 and 2024.
+                    An increasing ratio indicates that hospital
+                    beds have grown faster than population,
+                    while a decreasing ratio indicates that
+                    population has grown faster than hospital
+                    bed capacity.
+                </p>
+
+                <p>
+                    These trends help identify states where
+                    healthcare capacity may not be keeping pace
+                    with population growth.
+                </p>
+            </div>
+
+
+            <p class="chart-note">
+                Changes in the ratio may reflect changes in hospital
+                bed capacity, population size, or both.
+            </p>
+        </section>
+
+
+        <!-- Chart 4: Hospital beds by institution type -->
+        <section class="chart-card">
+            <h2>Hospital Bed Capacity by Institution Type (2024)</h2>
+
+            <p>
+                Compare how hospital beds are distributed across
+                MOH hospitals, non-MOH hospitals, and special
+                medical institutions in each Malaysian state.
+            </p>
+
+            <div id="beds-type-chart"></div>
+
+            <p class="chart-note">
+                Note: The chart displays absolute bed counts,
+                not beds per resident. States with larger
+                populations may naturally have more beds.
+            </p>
+        </section>
+
+
+        <!-- Chart 5: Percentage of beds by institution type -->
+        <section class="chart-card">
+            <h2>Hospital Bed Composition by State (2024)</h2>
+
+            <p>
+                Compare the percentage contribution of MOH hospitals,
+                non-MOH hospitals, and special medical institutions
+                across Malaysian states and federal territories.
+            </p>
+
+            <div id="beds-percentage-chart"></div>
+
+            <p class="chart-note">
+                Each bar represents 100% of the recorded hospital
+                beds in a state. The chart compares proportions,
+                not total hospital bed capacity.
+            </p>
+        </section>
+
+
+        <!-- Chart 6: Hospital bed availability heatmap -->
+        <section class="chart-card">
+            <h2>Hospital Bed Availability Across States (2015–2024)</h2>
+
+            <p>
+                Compare hospital bed availability across Malaysian
+                states and federal territories over ten years.
+                Darker colours indicate more hospital beds per
+                10,000 residents.
+            </p>
+
+            <div id="beds-heatmap"></div>
+
+            <p class="chart-note">
+                Each cell represents one state in one year.
+                Values are normalised by resident population,
+                allowing comparisons across states of different sizes.
+            </p>
+        </section>
+
+
+        <!-- Chart 7: Public healthcare facilities per population -->
+        <section class="chart-card" id="facility-distribution">
+            <h2>Public Healthcare Facilities per 100,000 Residents</h2>
+
+            <p>
+                Compare the number of recorded open public healthcare
+                facilities relative to each state's 2024 population.
+            </p>
+
+            <div id="facilities-dot-chart"></div>
+
+            <div class="key-finding">
+                <h3>Key Finding: Selangor Has the Lowest Facility-to-Population Ratio</h3>
+
+                <p>
+                    Selangor records approximately 5.15 public
+                    healthcare facilities per 100,000 residents,
+                    compared with 31.33 in Perlis and 31.30 in Pahang.
+                </p>
+
+                <p>
+                    This difference highlights how facility counts
+                    relative to population vary substantially
+                    between Malaysian states.
+                </p>
+
+                <p>
+                    However, a lower ratio does not necessarily
+                    mean poorer healthcare access. Individual
+                    facilities differ in capacity, services,
+                    and patient coverage. Residents may also
+                    use facilities outside their home state.
+                </p>
+            </div>
+
+            <p class="chart-note">
+                Facility counts are based on the available facility
+                registry and divided by 2024 population estimates.
+                Facilities may differ substantially in size and services.
+            </p>
+        </section>
+
+
+        <!-- Chart 8: Healthcare facility location map -->
+        <section class="chart-card">
+            <h2>Geographical Distribution of Public Healthcare Facilities</h2>
+
+            <p>
+                Explore the geographical locations of recorded open
+                public healthcare facilities across Malaysia.
+                Each point represents one facility.
+            </p>
+
+            <div id="facilities-map"></div>
+
+            <p class="chart-note">
+                Facility locations are based on available registry
+                coordinates. Areas with fewer points do not necessarily
+                have poorer healthcare access, as population distribution
+                and travel distances must also be considered.
+            </p>
+        </section>
+
+
+        <!-- Chart 9: Proportional symbol map -->
+        <section class="chart-card">
+            <h2>Public Healthcare Facilities by State and Category</h2>
+
+            <p>
+                Compare the number of public healthcare facilities
+                across Malaysian states using proportional circles.
+                Select a facility category to explore differences.
+            </p>
+
+            <div id="facilities-symbol-map"></div>
+
+            <p class="chart-note">
+                Circle area represents the number of recorded facilities.
+                The map shows absolute facility counts, not facilities
+                per resident. Circle positions are approximate.
+            </p>
+        </section>
+
+
+        <!-- Chart 10: Healthcare resource comparison -->
+        <section class="chart-card" id="resource-comparison">
+            <h2>Healthcare Facilities vs Hospital Bed Availability</h2>
+
+            <p>
+                Explore the relationship between public healthcare
+                facilities per 100,000 residents and hospital beds
+                per 10,000 residents across Malaysian states.
+            </p>
+
+            <div id="healthcare-scatter"></div>
+
+            <div class="key-finding">
+                <h3>Key Finding: More Facilities Do Not Always Mean More Hospital Beds</h3>
+
+                <p>
+                    Kuala Lumpur records approximately 6.92 public
+                    healthcare facilities per 100,000 residents,
+                    but has 26.59 hospital beds per 10,000 residents.
+                    In comparison, Perlis has 31.33 facilities
+                    per 100,000 residents but only 17.42 hospital
+                    beds per 10,000 residents.
+                </p>
+
+                <p>
+                    This demonstrates that facility density and
+                    hospital bed availability measure different
+                    aspects of healthcare resources. A state may
+                    have relatively few facilities but substantial
+                    hospital bed capacity.
+                </p>
+
+                <p>
+                    Use the dropdown to exclude Putrajaya, whose
+                    unusually high bed-to-population ratio can
+                    make differences between other states harder
+                    to see. The comparison is descriptive and
+                    does not establish healthcare accessibility
+                    or a causal relationship.
+                </p>
+            </div>
+
+            <p class="chart-note">
+                Facility counts are based on the available registry,
+                while hospital beds and population are from 2024.
+                These measures describe resource availability,
+                not actual healthcare accessibility or quality.
+            </p>
+        </section>
+
+
+
+
+
+    </main>
+
+    <script>
+        // Chart 1: Horizontal bar chart
+        const bedsSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 500,
+
+            "data": {
+                "url": "data/processed/beds_per_10000_2024.json"
+            },
+
+            "transform": [
+                {
+                    "calculate": "replace(datum.state, 'WILAYAH PERSEKUTUAN ', '')",
+                    "as": "state_display"
+                }
+            ],
+
+            "mark": {
+                "type": "bar",
+                "color": "#2563eb",
+                "cornerRadiusEnd": 3
+            },
+
+            "encoding": {
+                "y": {
+                    "field": "state_display",
+                    "type": "nominal",
+                    "sort": "-x",
+                    "title": null,
+                    "axis": {
+                        "labelLimit": 180
+                    }
+                },
+
+                "x": {
+                    "field": "beds_per_10000",
+                    "type": "quantitative",
+                    "title": "Beds per 10,000 residents",
+                    "scale": {
+                        "zero": true
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "hospital_beds",
+                        "title": "Hospital beds",
+                        "format": ","
+                    },
+                    {
+                        "field": "population",
+                        "title": "Population",
+                        "format": ","
+                    },
+                    {
+                        "field": "beds_per_10000",
+                        "title": "Beds per 10,000",
+                        "format": ".2f"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+
+                "axis": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13,
+                    "gridColor": "#e5e7eb"
+                }
+            }
+        };
+
+        // Chart 2: Malaysia choropleth map
+        const mapSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 450,
+
+            "data": {
+                "url": "data/processed/malaysia_beds_map_2024.geojson",
+                "format": {
+                    "type": "json",
+                    "property": "features"
+                }
+            },
+
+            // Fit the projection to the Malaysian state geometries.
+            "projection": {
+                "type": "mercator"
+            },
+
+            "mark": {
+                "type": "geoshape",
+                "stroke": "#374151",
+                "strokeWidth": 1
+            },
+
+            "encoding": {
+
+                
+                "color": {
+                    "field": "properties.beds_per_10000",
+                    "type": "quantitative",
+                    "bin": {
+                        "step": 15
+                    },
+                    "title": "Beds per 10,000",
+                    "scale": {
+                        "scheme": "blues"
+                    },
+                    "legend": {
+                        "orient": "right",
+                        "titleLimit": 160
+                    }
+                },
+
+
+                "tooltip": [
+                    {
+                        "field": "properties.state",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "properties.hospital_beds",
+                        "type": "quantitative",
+                        "title": "Hospital beds",
+                        "format": ","
+                    },
+                    {
+                        "field": "properties.population",
+                        "type": "quantitative",
+                        "title": "Population",
+                        "format": ","
+                    },
+                    {
+                        "field": "properties.beds_per_10000",
+                        "type": "quantitative",
+                        "title": "Beds per 10,000",
+                        "format": ".2f"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                }
+            }
+        };
+
+        // Render both charts.
+        vegaEmbed("#beds-chart", bedsSpec, {
+            actions: false
+        }).catch(console.error);
+
+        vegaEmbed("#malaysia-map", mapSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        // Chart 3: Hospital bed availability trend
+        const trendSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 350,
+
+            "data": {
+                "url": "data/processed/beds_trend_2015_2024.json"
+            },
+
+            "params": [
+                {
+                    "name": "selectedState",
+                    "value": "SELANGOR",
+                    "bind": {
+                        "input": "select",
+                        "name": "Select state: ",
+                        "options": [
+                            "JOHOR",
+                            "KEDAH",
+                            "KELANTAN",
+                            "MELAKA",
+                            "NEGERI SEMBILAN",
+                            "PAHANG",
+                            "PERAK",
+                            "PERLIS",
+                            "PULAU PINANG",
+                            "SABAH",
+                            "SARAWAK",
+                            "SELANGOR",
+                            "TERENGGANU",
+                            "WILAYAH PERSEKUTUAN KUALA LUMPUR",
+                            "WILAYAH PERSEKUTUAN LABUAN",
+                            "WILAYAH PERSEKUTUAN PUTRAJAYA"
+                        ]
+                    }
+                }
+            ],
+
+            "transform": [
+                {
+                    "filter": "datum.state === selectedState"
+                }
+            ],
+
+            "mark": {
+                "type": "line",
+                "color": "#2563eb",
+                "point": {
+                    "filled": true,
+                    "size": 70
+                },
+                "strokeWidth": 3
+            },
+
+            "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "ordinal",
+                    "title": "Year"
+                },
+
+                "y": {
+                    "field": "beds_per_10000",
+                    "type": "quantitative",
+                    "title": "Beds per 10,000 residents",
+                    "scale": {
+                        "zero": false
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "year",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "hospital_beds",
+                        "title": "Hospital beds",
+                        "format": ","
+                    },
+                    {
+                        "field": "population",
+                        "title": "Population",
+                        "format": ","
+                    },
+                    {
+                        "field": "beds_per_10000",
+                        "title": "Beds per 10,000",
+                        "format": ".2f"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+                "axis": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13,
+                    "gridColor": "#e5e7eb"
+                }
+            }
+        };
+
+        vegaEmbed("#beds-trend-chart", trendSpec, {
+            actions: false
+        }).catch(console.error);
+
+        
+        // Chart 4: Stacked bar chart by institution type
+        const bedsTypeSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 500,
+
+            "data": {
+                "url": "data/processed/hospital_beds_by_type_2024.json"
+            },
+
+            "transform": [
+                {
+                    "calculate": "replace(datum.state, 'WILAYAH PERSEKUTUAN ', '')",
+                    "as": "state_display"
+                }
+            ],
+
+            "mark": {
+                "type": "bar"
+            },
+
+            "encoding": {
+                "y": {
+                    "field": "state_display",
+                    "type": "nominal",
+                    "sort": {
+                        "field": "beds",
+                        "op": "sum",
+                        "order": "descending"
+                    },
+                    "title": null,
+                    "axis": {
+                        "labelLimit": 180
+                    }
+                },
+
+                "x": {
+                    "field": "beds",
+                    "type": "quantitative",
+                    "stack": "zero",
+                    "title": "Number of hospital beds"
+                },
+
+                "color": {
+                    "field": "category",
+                    "type": "nominal",
+                    "title": "Institution type",
+                    "scale": {
+                        "domain": [
+                            "MOH Hospitals",
+                            "Non-MOH Hospitals",
+                            "Special Medical Institutions"
+                        ],
+                        "range": [
+                            "#2563eb",
+                            "#0d9488",
+                            "#f59e0b"
+                        ]
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "category",
+                        "title": "Institution type"
+                    },
+                    {
+                        "field": "beds",
+                        "title": "Hospital beds",
+                        "format": ","
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+                "axis": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13,
+                    "gridColor": "#e5e7eb"
+                },
+                "legend": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13
+                }
+            }
+        };
+
+        vegaEmbed("#beds-type-chart", bedsTypeSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        // Chart 5: 100% stacked bar chart
+        const bedsPercentageSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 500,
+
+            "data": {
+                "url": "data/processed/hospital_beds_by_type_2024.json"
+            },
+
+            "transform": [
+                {
+                    "calculate": "replace(datum.state, 'WILAYAH PERSEKUTUAN ', '')",
+                    "as": "state_display"
+                },
+                {
+                    "joinaggregate": [
+                        {
+                            "op": "sum",
+                            "field": "beds",
+                            "as": "state_total"
+                        }
+                    ],
+                    "groupby": ["state"]
+                },
+                {
+                    "calculate": "datum.state_total > 0 ? datum.beds / datum.state_total : 0",
+                    "as": "bed_share"
+                }
+            ],
+
+            "mark": {
+                "type": "bar"
+            },
+
+            "encoding": {
+                "y": {
+                    "field": "state_display",
+                    "type": "nominal",
+                    "sort": "ascending",
+                    "title": null,
+                    "axis": {
+                        "labelLimit": 180
+                    }
+                },
+
+                "x": {
+                    "field": "bed_share",
+                    "type": "quantitative",
+                    "stack": "zero",
+                    "title": "Share of hospital beds",
+                    "axis": {
+                        "format": ".0%"
+                    },
+                    "scale": {
+                        "domain": [0, 1]
+                    }
+                },
+
+                "color": {
+                    "field": "category",
+                    "type": "nominal",
+                    "title": "Institution type",
+                    "scale": {
+                        "domain": [
+                            "MOH Hospitals",
+                            "Non-MOH Hospitals",
+                            "Special Medical Institutions"
+                        ],
+                        "range": [
+                            "#2563eb",
+                            "#0d9488",
+                            "#f59e0b"
+                        ]
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "category",
+                        "title": "Institution type"
+                    },
+                    {
+                        "field": "beds",
+                        "title": "Hospital beds",
+                        "format": ","
+                    },
+                    {
+                        "field": "bed_share",
+                        "title": "Share of state beds",
+                        "format": ".1%"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+                "axis": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13,
+                    "gridColor": "#e5e7eb"
+                },
+                "legend": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13
+                }
+            }
+        };
+
+        vegaEmbed("#beds-percentage-chart", bedsPercentageSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        // Chart 6: State-by-year hospital bed heatmap
+        const heatmapSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 480,
+
+            "data": {
+                "url": "data/processed/beds_trend_2015_2024.json"
+            },
+
+            "transform": [
+                {
+                    "calculate": "replace(datum.state, 'WILAYAH PERSEKUTUAN ', '')",
+                    "as": "state_display"
+                }
+            ],
+
+            "mark": {
+                "type": "rect",
+                "stroke": "white",
+                "strokeWidth": 1
+            },
+
+            "encoding": {
+                "x": {
+                    "field": "year",
+                    "type": "ordinal",
+                    "title": "Year",
+                    "axis": {
+                        "labelAngle": 0
+                    }
+                },
+
+                "y": {
+                    "field": "state_display",
+                    "type": "nominal",
+                    "sort": "ascending",
+                    "title": null,
+                    "axis": {
+                        "labelLimit": 180
+                    }
+                },
+
+                "color": {
+                    "field": "beds_per_10000",
+                    "type": "quantitative",
+                    "title": "Beds per 10,000",
+                    "scale": {
+                        "scheme": "blues"
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "year",
+                        "title": "Year"
+                    },
+                    {
+                        "field": "hospital_beds",
+                        "title": "Hospital beds",
+                        "format": ","
+                    },
+                    {
+                        "field": "population",
+                        "title": "Population",
+                        "format": ","
+                    },
+                    {
+                        "field": "beds_per_10000",
+                        "title": "Beds per 10,000",
+                        "format": ".2f"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+                "axis": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13
+                },
+                "legend": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13
+                }
+            }
+        };
+
+        vegaEmbed("#beds-heatmap", heatmapSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        
+        // Chart 7: Healthcare facilities per 100,000 residents
+        const facilitiesDotSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 500,
+
+            "data": {
+                "url": "data/processed/facilities_per_100000.json"
+            },
+
+            "transform": [
+                {
+                    "calculate": "replace(datum.state, 'WILAYAH PERSEKUTUAN ', '')",
+                    "as": "state_display"
+                }
+            ],
+
+            "mark": {
+                "type": "circle",
+                "size": 160,
+                "color": "#2563eb"
+            },
+
+            "encoding": {
+                "x": {
+                    "field": "facilities_per_100000",
+                    "type": "quantitative",
+                    "title": "Public facilities per 100,000 residents",
+                    "scale": {
+                        "zero": true
+                    }
+                },
+
+                "y": {
+                    "field": "state_display",
+                    "type": "nominal",
+                    "sort": {
+                        "field": "facilities_per_100000",
+                        "order": "descending"
+                    },
+                    "title": null,
+                    "axis": {
+                        "labelLimit": 180
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "facility_count",
+                        "title": "Public facilities",
+                        "format": ","
+                    },
+                    {
+                        "field": "population",
+                        "title": "2024 population",
+                        "format": ","
+                    },
+                    {
+                        "field": "facilities_per_100000",
+                        "title": "Facilities per 100,000",
+                        "format": ".2f"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                }
+            }
+        };
+
+        vegaEmbed("#facilities-dot-chart", facilitiesDotSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        // Chart 8: Public healthcare facility point map
+        const facilitiesMapSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 450,
+
+            "projection": {
+                "type": "mercator"
+            },
+
+            "layer": [
+                {
+                    "data": {
+                        "url": "data/geo/malaysia_states_cleaned.geojson",
+                        "format": {
+                            "type": "json",
+                            "property": "features"
+                        }
+                    },
+
+                    "mark": {
+                        "type": "geoshape",
+                        "fill": "#e2e8f0",
+                        "stroke": "#64748b",
+                        "strokeWidth": 0.7
+                    }
+                },
+                {
+                    "data": {
+                        "url": "data/processed/facilities_points.geojson",
+                        "format": {
+                            "type": "json",
+                            "property": "features"
+                        }
+                    },
+
+                    "mark": {
+                        "type": "geoshape",
+                        "filled": true,
+                        "color": "#2563eb",
+                        "opacity": 0.25,
+                        "size": 8
+                    },
+
+                    "encoding": {
+                        "tooltip": [
+                            {
+                                "field": "properties.name",
+                                "type": "nominal",
+                                "title": "Facility"
+                            },
+                            {
+                                "field": "properties.category",
+                                "type": "nominal",
+                                "title": "Category"
+                            },
+                            {
+                                "field": "properties.facility_type",
+                                "type": "nominal",
+                                "title": "Facility type"
+                            },
+                            {
+                                "field": "properties.district",
+                                "type": "nominal",
+                                "title": "District"
+                            },
+                            {
+                                "field": "properties.state",
+                                "type": "nominal",
+                                "title": "State"
+                            }
+                        ]
+                    }
+                }
+            ],
+
+            "config": {
+                "view": {
+                    "stroke": null
+                }
+            }
+        };
+
+        vegaEmbed("#facilities-map", facilitiesMapSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        // Chart 9: Interactive proportional symbol map
+        const facilitiesSymbolSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 450,
+
+            "projection": {
+                "type": "mercator"
+            },
+
+            "params": [
+                {
+                    "name": "selectedFacilityCategory",
+                    "value": "All facilities",
+                    "bind": {
+                        "input": "select",
+                        "name": "Facility category: ",
+                        "options": [
+                            "All facilities",
+                            "Hospitals",
+                            "Clinics"
+                        ]
+                    }
+                }
+            ],
+
+            "layer": [
+                {
+                    "data": {
+                        "url": "data/geo/malaysia_states_cleaned.geojson",
+                        "format": {
+                            "type": "json",
+                            "property": "features"
+                        }
+                    },
+
+                    "mark": {
+                        "type": "geoshape",
+                        "fill": "#e2e8f0",
+                        "stroke": "#64748b",
+                        "strokeWidth": 0.7
+                    }
+                },
+                {
+                    "data": {
+                        "url": "data/processed/facilities_symbol_map.json"
+                    },
+
+                    "transform": [
+                        {
+                            "filter": "datum.category === selectedFacilityCategory"
+                        }
+                    ],
+
+                    "mark": {
+                        "type": "circle",
+                        "color": "#2563eb",
+                        "opacity": 0.6,
+                        "stroke": "#1e40af",
+                        "strokeWidth": 1
+                    },
+
+                    "encoding": {
+                        "longitude": {
+                            "field": "longitude",
+                            "type": "quantitative"
+                        },
+
+                        "latitude": {
+                            "field": "latitude",
+                            "type": "quantitative"
+                        },
+
+
+                        "size": {
+                            "field": "facility_count",
+                            "type": "quantitative",
+                            "title": "Number of facilities",
+                            "scale": {
+                                "type": "linear",
+                                "domain": [0, 800],
+                                "range": [10, 5000],
+                                "zero": true
+                            },
+                            "legend": {
+                                "orient": "right",
+                                "format": ",.0f"
+                            }
+                        },
+
+                        "tooltip": [
+                            {
+                                "field": "state",
+                                "title": "State"
+                            },
+                            {
+                                "field": "category",
+                                "title": "Facility category"
+                            },
+                            {
+                                "field": "facility_count",
+                                "title": "Number of facilities",
+                                "format": ","
+                            }
+                        ]
+                    }
+                }
+            ],
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+                "legend": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13
+                }
+            }
+        };
+
+        vegaEmbed("#facilities-symbol-map", facilitiesSymbolSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+        // Chart 10: Healthcare facilities versus hospital beds
+        const healthcareScatterSpec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+            "width": 650,
+            "height": 420,
+
+            "data": {
+                "url": "data/processed/healthcare_access_scatter.json"
+            },
+
+            "params": [
+                {
+                    "name": "includePutrajaya",
+                    "value": "All states",
+                    "bind": {
+                        "input": "select",
+                        "name": "Display: ",
+                        "options": [
+                            "All states",
+                            "Exclude Putrajaya"
+                        ]
+                    }
+                }
+            ],
+
+            "transform": [
+                {
+                    "filter": "includePutrajaya === 'All states' || datum.state !== 'WILAYAH PERSEKUTUAN PUTRAJAYA'"
+                },
+                {
+                    "calculate": "replace(datum.state, 'WILAYAH PERSEKUTUAN ', '')",
+                    "as": "state_display"
+                }
+            ],
+
+            "mark": {
+                "type": "circle",
+                "size": 160,
+                "opacity": 0.8,
+                "color": "#2563eb",
+                "stroke": "#1e40af",
+                "strokeWidth": 1
+            },
+
+            "encoding": {
+                "x": {
+                    "field": "facilities_per_100000",
+                    "type": "quantitative",
+                    "title": "Public facilities per 100,000 residents",
+                    "scale": {
+                        "zero": true
+                    }
+                },
+
+                "y": {
+                    "field": "beds_per_10000",
+                    "type": "quantitative",
+                    "title": "Hospital beds per 10,000 residents",
+                    "scale": {
+                        "zero": true
+                    }
+                },
+
+                "tooltip": [
+                    {
+                        "field": "state",
+                        "title": "State"
+                    },
+                    {
+                        "field": "facility_count",
+                        "title": "Public facilities",
+                        "format": ","
+                    },
+                    {
+                        "field": "hospital_beds",
+                        "title": "Hospital beds",
+                        "format": ","
+                    },
+                    {
+                        "field": "facilities_per_100000",
+                        "title": "Facilities per 100,000",
+                        "format": ".2f"
+                    },
+                    {
+                        "field": "beds_per_10000",
+                        "title": "Beds per 10,000",
+                        "format": ".2f"
+                    }
+                ]
+            },
+
+            "config": {
+                "view": {
+                    "stroke": null
+                },
+                "axis": {
+                    "labelFontSize": 12,
+                    "titleFontSize": 13,
+                    "gridColor": "#e5e7eb"
+                }
+            }
+        };
+
+        vegaEmbed("#healthcare-scatter", healthcareScatterSpec, {
+            actions: false
+        }).catch(console.error);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
